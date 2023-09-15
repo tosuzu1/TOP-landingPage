@@ -12,15 +12,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 15%;
 }
 
 .right-item > a {
     margin: 0 10px;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .left-item {
     font-weight: bold;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 
@@ -28,37 +32,40 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center;
-    padding: 0 100px;
 }
 
 .item-1, .image-box {
     flex: 1;
 }
 
-.item-1 > *{
-    margin: 4px 0;
+.item-1 {
+    > * {
+        margin: 4px 0;
+    }
+    > h1 {
+        font-size: 48px;
+        font-weight: 800;
+    }
 }
 
 .body1 {
-    padding: 50px 100px;
+    padding: 50px 15%;
     color: #F9FAF8;
     background-color: #1F2937;
 }
 
-.body3 {
-    padding: 0 100px;
-    text-align: center;
-}
-
 .body4 {
-    background-color: lightgray;
-    padding: 40px 150px;
+    background-color: #E5E7EB;
+    padding: 40px 25%;
+    font-size: 36px;
+    color: #1F2937;
+    
 }
 
 .Body5 {
     /* display: flex;
     justify-content: center; */
-    padding: 0px 100px;
+    padding: 0px 15%;
 }
 
 .footer {
@@ -84,7 +91,7 @@ img {
     background-color: #3882F6;
     color: #F9FAF8;
     border: 0;
-    padding: 10px 30px;
+    padding: 10px 50px;
 }
 
 .item-promo-signup{
@@ -97,6 +104,7 @@ img {
     border-radius: 5px;
     background-color: #3882F6;
     padding: 30px 80px;
+    
 }
 
 .call-action-banner-item1 > h2, p {
@@ -105,7 +113,7 @@ img {
 
 .call-action-banner-item2 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
 
@@ -113,4 +121,45 @@ img {
         border:1px solid white;
     }
 
+}
+
+#by-thor {
+    text-align: right;
+    font-weight: bold;
+}
+
+#thor-quote{
+    font-style: italic;
+}
+
+.card {
+    width: 200px;
+    /* border: 1px solid red; */
+    > img {
+        width: 200px;
+        height: 200px;
+        border: 5px solid #3882F6;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    > p {
+        margin: 8px;
+    }
+}
+
+.body3 {
+    padding: 50px 15%;
+    text-align: center;
+    > h1 {
+        font-size: 36px;
+        font-weight: 800;
+        color: #1F2937;
+    }
+}
+
+.card-container {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin: 50px;
 }
